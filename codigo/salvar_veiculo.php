@@ -3,7 +3,6 @@ require_once "conexao.php";
 
 $modelo = $_POST['modelo'];
 $placa = $_POST['placa'];
-$foto = $_POST['foto'];
 $idcliente = $_POST['idcliente'];
 
 $nome_arquivo = $_FILES['foto']['name'];
@@ -17,8 +16,14 @@ $caminho_destino = "fotos_veiculos/" . $novo_nome;
 
 move_uploaded_file($caminho_temporario, $caminho_destino);
 
-$sql = "INSERT INTO veiculo (modelo, placa, foto, idcliente) VALUES ('$modelo', '$placa', '$novo_nome', '$idcliente')";
+$sql = "INSERT INTO veiculo (modelo, placa, foto, idcliente)
+        VALUES (?, ?, ?, ?)";
 
-mysqli_query($conexao, $sql);
+$comando = mysqli_prepare($conexao, $sql);
+
+mysqli_stmt_bind_param($comando, "sssi", $modelo, $placa, $novo_nome, $idcliente);
+
+mysqli_stmt_execute($comando);
 
 header("Location: home.php");
+?>
