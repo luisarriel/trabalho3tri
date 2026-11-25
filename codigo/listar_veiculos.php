@@ -1,10 +1,6 @@
 <?php
 require_once "verificar_sessao.php";
 require_once "conexao.php";
-?>
-
-<?php
-require_once "conexao.php";
 
 $sql = "SELECT veiculo.*, cliente.nome
         FROM veiculo, cliente
@@ -47,6 +43,9 @@ $resultado = mysqli_stmt_get_result($comando);
         <br>
 
         <img src="fotos_veiculos/<?php echo $veiculo['foto']; ?>" width="100">
+        <br>
+
+        <a href="form_editar.php?idveiculo=<?php echo $veiculo['idveiculo']; ?>">Editar</a>
 
         <hr>
 
