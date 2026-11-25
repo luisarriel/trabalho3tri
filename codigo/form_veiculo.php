@@ -1,3 +1,8 @@
+<?php
+require_once "verificar_sessao.php";
+require_once "conexao.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
