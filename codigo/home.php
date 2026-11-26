@@ -16,6 +16,7 @@ require_once "verificar_sessao.php";
     <a href="listar_veiculos.php">Listar veículos</a> <br>
     <a href="form_servico.php">Novo serviço</a> <br>
     <a href="listar_servicos.php">Listar serviços</a> <br>
+    <a href="pesquisar_servicos.php">Buscar serviços</a> <br>
 </body>
 
 </html>
