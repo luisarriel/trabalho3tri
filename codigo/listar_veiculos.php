@@ -24,12 +24,7 @@ $resultado = mysqli_stmt_get_result($comando);
 
     <h1>Veículos cadastrados</h1>
 
-<<<<<<< Updated upstream
     <a href="form_veiculo.php">Cadastrar veículo</a><br><a href="home.php">Ínicio</a><br><br>
-=======
-    <a href="form_veiculo.php">Cadastrar veículo</a>
-    <br><br>
->>>>>>> Stashed changes
 
     <?php
     while ($veiculo = mysqli_fetch_array($resultado)) {
@@ -39,9 +34,6 @@ $resultado = mysqli_stmt_get_result($comando);
         <br>
 
         Placa: <?php echo $veiculo['placa']; ?>
-        <br>
-
-        Tipo: <?php echo $veiculo['tipo']; ?>
         <br>
 
         Cliente: <?php echo $veiculo['nome']; ?>
