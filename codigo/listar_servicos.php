@@ -23,7 +23,7 @@ $resultado = mysqli_stmt_get_result($comando);
 
     <h1>Serviços cadastrados</h1>
 
-    <a href="form_servico.php">Cadastrar serviço</a>
+    <a href="form_servico.php">Cadastrar serviço</a> <br><br> <a href="home.php">Ínicio</a>
     <br><br>
 
     <?php

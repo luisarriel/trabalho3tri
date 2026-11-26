@@ -83,7 +83,9 @@ $veiculo = mysqli_fetch_array($resultado);
 
         <input type="submit" value="Salvar alterações">
 
+    
     </form>
-
+        
+    <a href="home.php">Ínicio</a>
 </body>
 </html>

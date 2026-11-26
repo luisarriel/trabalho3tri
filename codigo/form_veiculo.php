@@ -45,6 +45,9 @@ require_once "conexao.php";
 
         <input type="submit" value="Cadastrar">
     </form>
+
+    <a href="home.php">Ínicio</a>
+    
 </body>
 
 </html>

@@ -61,5 +61,7 @@ require_once "conexao.php";
 
     </form>
 
+    <a href="home.php">Ínicio</a>
+
 </body>
 </html>

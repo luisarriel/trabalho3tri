@@ -34,6 +34,8 @@ $resultado = mysqli_stmt_get_result($comando);
 
     <h1>Pesquisar serviços</h1>
 
+    <a href="home.php">Ínicio</a><br><br>
+
     <form action="pesquisar_servicos.php" method="GET">
 
         Modelo ou placa:
