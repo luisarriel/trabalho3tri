@@ -28,19 +28,19 @@ require_once "conexao.php";
         Tipo do veículo:
         <br>
 
-        <input type="checkbox" name="tipo[]" value="Carro">
+        <input type="checkbox" name="tipo" value="Carro">
         Carro
         <br>
 
-        <input type="checkbox" name="tipo[]" value="Moto">
+        <input type="checkbox" name="tipo" value="Moto">
         Moto
         <br>
 
-        <input type="checkbox" name="tipo[]" value="Caminhonete">
+        <input type="checkbox" name="tipo" value="Caminhonete">
         Caminhonete
         <br>
 
-        <input type="checkbox" name="tipo[]" value="Outro">
+        <input type="checkbox" name="tipo" value="Outro">
         Outro
         <br><br>
 
