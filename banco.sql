@@ -85,3 +85,41 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+
+INSERT INTO cliente (idcliente, nome, telefone, endereco) VALUES
+(1, 'João Silva', '31987654321', 'Rua das Flores, 100'),
+(2, 'Maria Santos', '31987654322', 'Avenida Brasil, 250'),
+(3, 'Pedro Oliveira', '31987654323', 'Rua Central, 300'),
+(4, 'Ana Souza', '31987654324', 'Rua das Acácias, 450'),
+(5, 'Lucas Costa', '31987654325', 'Avenida Amazonas, 500'),
+(6, 'Juliana Lima', '31987654326', 'Rua Goiás, 120'),
+(7, 'Rafael Alves', '31987654327', 'Rua Minas Gerais, 80'),
+(8, 'Camila Rocha', '31987654328', 'Avenida Afonso Pena, 900'),
+(9, 'Gabriel Gomes', '31987654329', 'Rua Bahia, 150'),
+(10, 'Fernanda Martins', '31987654330', 'Rua São Paulo, 220');
+
+INSERT INTO veiculo (idveiculo, modelo, placa, foto, tipo, idcliente) VALUES
+(1, 'Honda Civic', 'ABC1234', 'civic.jpg', 'Carro', 1),
+(2, 'Toyota Corolla', 'DEF5678', 'corolla.jpg', 'Carro', 2),
+(3, 'Volkswagen Gol', 'GHI9012', 'gol.jpg', 'Carro', 3),
+(4, 'Chevrolet Onix', 'JKL3456', 'onix.jpg', 'Carro', 4),
+(5, 'Fiat Uno', 'MNO7890', 'uno.jpg', 'Carro', 5),
+(6, 'Hyundai HB20', 'PQR1234', 'hb20.jpg', 'Carro', 6),
+(7, 'Honda CG 160', 'STU5678', 'cg160.jpg', 'Moto', 7),
+(8, 'Yamaha Fazer 250', 'VWX9012', 'fazer.jpg', 'Moto', 8),
+(9, 'Jeep Renegade', 'YZA3456', 'renegade.jpg', 'SUV', 9),
+(10, 'Fiat Argo', 'BCD7890', 'argo.jpg', 'Carro', 10);
+
+INSERT INTO servico (idservico, idveiculo, descricao, valor, data) VALUES
+(1, 1, 'Troca de oleo', 180.00, '2026-01-10'),
+(2, 2, 'Alinhamento e balanceamento', 150.00, '2026-01-11'),
+(3, 3, 'Troca de pastilhas de freio', 320.00, '2026-01-12'),
+(4, 4, 'Revisao completa', 650.00, '2026-01-13'),
+(5, 5, 'Troca de bateria', 450.00, '2026-01-14'),
+(6, 6, 'Troca de pneus', 1200.00, '2026-01-15'),
+(7, 7, 'Manutencao do motor', 850.00, '2026-01-16'),
+(8, 8, 'Troca de filtro de ar', 90.00, '2026-01-17'),
+(9, 9, 'Reparo na suspensao', 700.00, '2026-01-18'),
+(10, 10, 'Troca de correia dentada', 550.00, '2026-01-19');
