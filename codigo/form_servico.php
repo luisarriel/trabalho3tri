@@ -5,10 +5,13 @@ require_once "conexao.php";
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar serviço</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
     <h1>Cadastrar serviço</h1>
@@ -64,4 +67,5 @@ require_once "conexao.php";
     <a href="home.php">Ínicio</a>
 
 </body>
+
 </html>

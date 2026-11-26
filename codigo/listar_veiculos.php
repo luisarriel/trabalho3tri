@@ -15,11 +15,14 @@ $resultado = mysqli_stmt_get_result($comando);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veículos cadastrados</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
     <h1>Veículos cadastrados</h1>
@@ -54,4 +57,5 @@ $resultado = mysqli_stmt_get_result($comando);
     ?>
 
 </body>
+
 </html>

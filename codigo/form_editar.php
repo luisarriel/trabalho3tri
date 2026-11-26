@@ -19,10 +19,13 @@ $veiculo = mysqli_fetch_array($resultado);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Editar veículo</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
     <h1>Editar veículo</h1>
@@ -83,9 +86,10 @@ $veiculo = mysqli_fetch_array($resultado);
 
         <input type="submit" value="Salvar alterações">
 
-    
+
     </form>
-        
+
     <a href="home.php">Ínicio</a>
 </body>
+
 </html>
