@@ -25,10 +25,10 @@ $resultado = mysqli_stmt_get_result($comando);
 <body>
 
     <h1>Serviços cadastrados</h1>
-
-    <a href="form_servico.php">Cadastrar serviço</a> <br><br> <a href="home.php">Ínicio</a>
+<div class="lista">
+    <a href="form_servico.php">Cadastrar serviço</a>  <a href="home.php">Ínicio</a>
     <br><br>
-
+<hr>
     <?php
     while ($servico = mysqli_fetch_array($resultado)) {
     ?>
@@ -52,7 +52,7 @@ $resultado = mysqli_stmt_get_result($comando);
     <?php
     }
     ?>
-
+</div>
 </body>
 
 </html>

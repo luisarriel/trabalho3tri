@@ -27,8 +27,12 @@ $resultado = mysqli_stmt_get_result($comando);
 
     <h1>Veículos cadastrados</h1>
 
-    <a href="form_veiculo.php">Cadastrar veículo</a><br><a href="home.php">Ínicio</a><br><br>
-
+<div class="opcoes">
+<a href="form_veiculo.php">Cadastrar veículo</a>
+<a href="home.php">Início</a>
+</div>
+<div class="lista">
+    <hr>
     <?php
     while ($veiculo = mysqli_fetch_array($resultado)) {
     ?>
@@ -55,6 +59,7 @@ $resultado = mysqli_stmt_get_result($comando);
     <?php
     }
     ?>
+</div>
 
 </body>
 

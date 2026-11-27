@@ -37,7 +37,7 @@ $resultado = mysqli_stmt_get_result($comando);
 
     <h1>Pesquisar serviços</h1>
 
-    <a href="home.php">Ínicio</a><br><br>
+    
 
     <form action="pesquisar_servicos.php" method="GET">
 
@@ -47,11 +47,12 @@ $resultado = mysqli_stmt_get_result($comando);
         <input type="text" name="pesquisa" value="<?php echo $pesquisa; ?>">
 
         <input type="submit" value="Pesquisar">
+        <a href="home.php">Ínicio</a><br><br>
 
     </form>
 
     <br>
-
+<div class="lista">
     <?php
     while ($servico = mysqli_fetch_array($resultado)) {
     ?>
@@ -78,7 +79,7 @@ $resultado = mysqli_stmt_get_result($comando);
     <?php
     }
     ?>
-
+</div>
 </body>
 
 </html>

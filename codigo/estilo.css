@@ -1,13 +1,20 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 20px;
 }
 
+h1 {
+    text-align: center;
+    color: #333;
+}
+
 #menu {
     background-color: #333;
     padding: 15px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #menu a {
@@ -17,16 +24,24 @@ body {
     font-size: large;
 }
 
-form {
+form, .lista {
     background-color: white;
     border: solid 1px #ccc;
     padding: 20px;
-    max-width: 400px;
+    max-width: 600px;
+    margin: auto;
     margin-bottom: 20px;
 }
 
-input,
-select {
+form {
+    max-width: 400px;
+}
+
+.lista {
+    text-align: center;
+}
+
+input, select {
     display: block;
     width: 100%;
     padding: 8px;
@@ -35,23 +50,17 @@ select {
     box-sizing: border-box;
 }
 
-input[type="submit"],
-button {
+input[type="submit"], button{
     background-color: #0066cc;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
+.checkbox {
+    display: inline;
+    width: auto;
+    margin: 0;
 }
 
 a {
@@ -69,11 +78,25 @@ img {
     height: 140px;
     border-radius: 5px;
     display: block;
-    margin-bottom: 10px;
+    margin: 10px auto;
 }
 
-.checkbox {
-    display: inline;
-    width: auto;
-    margin: 0;
+a:hover, button:hover {
+    background-color: #004c99;
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.opcoes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.opcoes a {
+    margin: 5px;
 }

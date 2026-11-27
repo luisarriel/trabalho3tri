@@ -12,16 +12,20 @@ require_once "verificar_sessao.php";
 </head>
 
 <body>
-    <h1>Ínicio</h1>
+    <h1>Início</h1>
     <hr>
-    <a href="form_cliente.php">Novo cliente</a> <br>
-    <a href="form_veiculo.php">Novo veículo</a> <br>
-    <a href="form_servico.php">Novo serviço</a> <br>
-    <a href="listar_veiculos.php">Listar veículos</a> <br>
-    <a href="listar_servicos.php">Listar serviços</a> <br>
-    <a href="pesquisar_servicos.php">Buscar serviços</a> <br><br>
+    <div class="opcoes">
+        <a href="form_cliente.php">Novo cliente</a>
+        <a href="form_veiculo.php">Novo veículo</a>
+        <a href="form_servico.php">Novo serviço</a>
+        <a href="listar_veiculos.php">Listar veículos</a>
+        <a href="listar_servicos.php">Listar serviços</a>
+        <a href="pesquisar_servicos.php">Buscar serviços</a>
+    </div>
     <hr>
-    <a href="sair.php">Sair</a>
+    <div class="opcoes">
+        <a href="sair.php">Sair</a>
+    </div>
 </body>
 
 </html>

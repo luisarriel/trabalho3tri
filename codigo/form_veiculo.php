@@ -14,6 +14,9 @@ require_once "conexao.php";
 </head>
 
 <body>
+
+<h1>Cadastrar Veículo</h1>
+
     <form action="salvar_veiculo.php" method="POST" enctype="multipart/form-data">
 
         Modelo:
@@ -29,19 +32,19 @@ require_once "conexao.php";
         Tipo do veículo:
         <br>
 
-        <input type="checkbox" name="tipo" value="Carro">
+        <input type="checkbox" name="tipo" value="Carro" class="checkbox">
         Carro
         <br>
 
-        <input type="checkbox" name="tipo" value="Moto">
+        <input type="checkbox" name="tipo" value="Moto" class="checkbox">
         Moto
         <br>
 
-        <input type="checkbox" name="tipo" value="Caminhonete">
+        <input type="checkbox" name="tipo" value="Caminhonete" class="checkbox">
         Caminhonete
         <br>
 
-        <input type="checkbox" name="tipo" value="Outro">
+        <input type="checkbox" name="tipo" value="Outro" class="checkbox">
         Outro
         <br><br>
 
@@ -75,10 +78,11 @@ require_once "conexao.php";
         <br><br>
 
         <input type="submit" value="Cadastrar">
+        <a href="home.php">Início</a>
 
     </form>
 
-    <a href="home.php">Início</a>
+    
 
 </body>
 </html>

@@ -14,6 +14,8 @@ require_once "conexao.php";
 </head>
 
 <body>
+
+<h1>Cadastrar Cliente</h1>
     <form action="salvar_cliente.php" method="GET">
         Nome: <br>
         <input type="text" name="nome"> <br><br>
@@ -22,10 +24,11 @@ require_once "conexao.php";
         Endereço: <br>
         <input type="text" name="endereco"> <br><br>
 
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar"><br>
+        <a href="home.php" class="redir">Ínicio</a>
     </form>
 
-    <a href="home.php">Ínicio</a>
+    
 </body>
 
 </html>
